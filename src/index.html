@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>JavaScript Sandbox</title>
+		<meta charset="UTF-8" />
+	</head>
+
+	<body>
+		<div id="app">
+			<header class="header">
+				<h1>Employee Database Management</h1>
+				<button class="createEmployee">Add Employee</button>
+			</header>
+		</div>
+
+		<div class="employees">
+			<div class="employees__names">
+				<span class="employees__names--title">Employee List</span>
+				<div class="employees__names--list"></div>
+			</div>
+			<div class="employees__single">
+				<span class="employees__single--title"
+					>Employee Information</span
+				>
+				<div class="employees__names--info"></div>
+			</div>
+		</div>
+		<div class="addEmployee">
+			<form class="addEmployee_create">
+				<div class="addEmployee_header">
+					<span class="add">Add a new Employee</span>
+				</div>
+				<div>
+					<input
+						type="text"
+						name="firstName"
+						placeholder="First Name"
+						class="addEmployee_create--firstName"
+						required
+					/>
+					<input
+						type="text"
+						name="lastName"
+						placeholder="Last Name"
+						class="addEmployee_create--lastName"
+						required
+					/>
+				</div>
+				<input
+					type="text"
+					name="imageUrl"
+					placeholder="Image URL (Optional)"
+					class="addEmployee_create--image"
+				/>
+				<input
+					type="email"
+					name="email"
+					placeholder="Email"
+					class="addEmployee_create--email"
+					required
+				/>
+				<input
+					type="number"
+					name="contactNumber"
+					placeholder="Contact"
+					class="addEmployee_create--contact"
+					required
+				/>
+				<input
+					type="number"
+					name="salary"
+					placeholder="Salary"
+					class="addEmployee_create--salary"
+					required
+				/>
+				<input
+					type="text"
+					name="address"
+					placeholder="Address"
+					class="addEmployee_create--address"
+					required
+				/>
+				<input
+					type="date"
+					name="dob"
+					placeholder="Date of Birth"
+					class="addEmployee_create--dob"
+					required
+				/>
+				<input
+					type="submit"
+					class="addEmployee_create--submit"
+					value="Submit"
+				/>
+			</form>
+		</div>
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="./index.js" type="module"></script>
+	</body>
+</html>
